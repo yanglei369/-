@@ -30,20 +30,21 @@ class Ui_MainWindow(object):
         MainWindow.setContextMenuPolicy(QtCore.Qt.DefaultContextMenu)
         MainWindow.setAcceptDrops(False)
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("f:\\My_Projects\\Temperature-Uart-7.0\\src\\../ico/tb.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon.addPixmap(QtGui.QPixmap("../ico/tb.ico"), QtGui.QIcon.Normal,
+                       QtGui.QIcon.Off)
         MainWindow.setWindowIcon(icon)
         MainWindow.setWindowOpacity(0.9)
         MainWindow.setWhatsThis("")
         MainWindow.setLayoutDirection(QtCore.Qt.LeftToRight)
         MainWindow.setAutoFillBackground(True)
         MainWindow.setStyleSheet("font-family:楷体;\n"
-"font-size:14pt;\n"
-"font-weight:bold;\n"
-"QStatus#statusBar{\n"
-"    border-bottom-left-radius:20px;\n"
-"    border-bottom-right-radius:20px;\n"
-"\n"
-"}")
+                                 "font-size:14pt;\n"
+                                 "font-weight:bold;\n"
+                                 "QStatus#statusBar{\n"
+                                 "    border-bottom-left-radius:20px;\n"
+                                 "    border-bottom-right-radius:20px;\n"
+                                 "\n"
+                                 "}")
         MainWindow.setInputMethodHints(QtCore.Qt.ImhNone)
         MainWindow.setIconSize(QtCore.QSize(30, 30))
         MainWindow.setTabShape(QtWidgets.QTabWidget.Rounded)
@@ -61,19 +62,19 @@ class Ui_MainWindow(object):
         self.tabWidget.setFont(font)
         self.tabWidget.setAutoFillBackground(False)
         self.tabWidget.setStyleSheet("QTabBar::tab{\n"
-"    color:black;\n"
-"    border-radius:15px;\n"
-"}\n"
-"QTabBar::tab:hover{\n"
-"    background:rgb(255,166,15);\n"
-"}\n"
-"QTabBar::tab:selected{\n"
-"    border-color:rgb(129,60,133);\n"
-"    background:rgb(46,49,124);\n"
-"    color:white\n"
-"}\n"
-"\n"
-"")
+                                     "    color:black;\n"
+                                     "    border-radius:15px;\n"
+                                     "}\n"
+                                     "QTabBar::tab:hover{\n"
+                                     "    background:rgb(255,166,15);\n"
+                                     "}\n"
+                                     "QTabBar::tab:selected{\n"
+                                     "    border-color:rgb(129,60,133);\n"
+                                     "    background:rgb(46,49,124);\n"
+                                     "    color:white\n"
+                                     "}\n"
+                                     "\n"
+                                     "")
         self.tabWidget.setTabPosition(QtWidgets.QTabWidget.South)
         self.tabWidget.setTabShape(QtWidgets.QTabWidget.Rounded)
         self.tabWidget.setIconSize(QtCore.QSize(15, 15))
@@ -91,10 +92,10 @@ class Ui_MainWindow(object):
         font.setKerning(True)
         self.groupBox.setFont(font)
         self.groupBox.setStyleSheet("QGroupBox#groupBox{\n"
-"    border: 1px solid gray;\n"
-"    border-radius:15px;\n"
-"}")
-        self.groupBox.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignTop)
+                                    "    border: 1px solid gray;\n"
+                                    "    border-radius:15px;\n"
+                                    "}")
+        self.groupBox.setAlignment(QtCore.Qt.AlignLeading | QtCore.Qt.AlignLeft | QtCore.Qt.AlignTop)
         self.groupBox.setFlat(False)
         self.groupBox.setObjectName("groupBox")
         self.comboBox_uart = QtWidgets.QComboBox(self.groupBox)
@@ -108,9 +109,9 @@ class Ui_MainWindow(object):
         font.setKerning(True)
         self.comboBox_uart.setFont(font)
         self.comboBox_uart.setStyleSheet("QComboBox#comboBox_uart{\n"
-"    font-family:楷体;\n"
-"    font-weight:normal;\n"
-"}")
+                                         "    font-family:楷体;\n"
+                                         "    font-weight:normal;\n"
+                                         "}")
         self.comboBox_uart.setObjectName("comboBox_uart")
         self.pushButton_open = QtWidgets.QPushButton(self.groupBox)
         self.pushButton_open.setGeometry(QtCore.QRect(0, 210, 271, 51))
@@ -124,15 +125,16 @@ class Ui_MainWindow(object):
         self.pushButton_open.setFont(font)
         self.pushButton_open.setLayoutDirection(QtCore.Qt.LeftToRight)
         self.pushButton_open.setStyleSheet("QPushButton { border-top:1px solid gray;\n"
-"border-bottom:1px solid gray;\n"
-"border-left:1px solid graye;\n"
-"border-right:1px solid gray;\n"
-"border-radius:10px; } \n"
-"QPushButton:hover { background-color: rgb(85, 170, 255); }\n"
-"QPushButton:pressed { background-color:rgb(129, 60, 133);}\n"
-"background:transparent;")
+                                           "border-bottom:1px solid gray;\n"
+                                           "border-left:1px solid graye;\n"
+                                           "border-right:1px solid gray;\n"
+                                           "border-radius:10px; } \n"
+                                           "QPushButton:hover { background-color: rgb(85, 170, 255); }\n"
+                                           "QPushButton:pressed { background-color:rgb(129, 60, 133);}\n"
+                                           "background:transparent;")
         icon1 = QtGui.QIcon()
-        icon1.addPixmap(QtGui.QPixmap("f:\\My_Projects\\Temperature-Uart-7.0\\src\\../ico/ck1.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon1.addPixmap(QtGui.QPixmap("../ico/ck1.ico"), QtGui.QIcon.Normal,
+                        QtGui.QIcon.Off)
         self.pushButton_open.setIcon(icon1)
         self.pushButton_open.setIconSize(QtCore.QSize(25, 25))
         self.pushButton_open.setObjectName("pushButton_open")
@@ -147,40 +149,41 @@ class Ui_MainWindow(object):
         font.setKerning(True)
         self.pushButton_refresh.setFont(font)
         self.pushButton_refresh.setStyleSheet("QPushButton { border-top:1px solid gray;\n"
-"border-bottom:1px solid gray;\n"
-"border-left:1px solid graye;\n"
-"border-right:1px solid gray;\n"
-"border-radius:10px; } \n"
-"QPushButton:hover { background-color: rgb(85, 170, 255); }\n"
-"QPushButton:pressed { background-color:rgb(129, 60, 133);}")
+                                              "border-bottom:1px solid gray;\n"
+                                              "border-left:1px solid graye;\n"
+                                              "border-right:1px solid gray;\n"
+                                              "border-radius:10px; } \n"
+                                              "QPushButton:hover { background-color: rgb(85, 170, 255); }\n"
+                                              "QPushButton:pressed { background-color:rgb(129, 60, 133);}")
         icon2 = QtGui.QIcon()
-        icon2.addPixmap(QtGui.QPixmap("f:\\My_Projects\\Temperature-Uart-7.0\\src\\../ico/sx.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon2.addPixmap(QtGui.QPixmap("../ico/sx.ico"), QtGui.QIcon.Normal,
+                        QtGui.QIcon.Off)
         self.pushButton_refresh.setIcon(icon2)
         self.pushButton_refresh.setIconSize(QtCore.QSize(20, 20))
         self.pushButton_refresh.setObjectName("pushButton_refresh")
         self.label_ck = QtWidgets.QLabel(self.groupBox)
         self.label_ck.setGeometry(QtCore.QRect(90, 90, 91, 91))
         self.label_ck.setText("")
-        self.label_ck.setPixmap(QtGui.QPixmap("f:\\My_Projects\\Temperature-Uart-7.0\\src\\../ico/connect_no.ico"))
+        self.label_ck.setPixmap(QtGui.QPixmap("../ico/connect_no.ico"))
         self.label_ck.setScaledContents(True)
         self.label_ck.setObjectName("label_ck")
         self.rx_lcdNumber = QtWidgets.QLCDNumber(self.tab)
         self.rx_lcdNumber.setGeometry(QtCore.QRect(99, 500, 191, 41))
         self.rx_lcdNumber.setStyleSheet("border-top:1px solid gray;\n"
-"border-bottom:1px solid gray;\n"
-"border-left:1px solid graye;\n"
-"border-right:1px solid gray;\n"
-"border-radius:10px;")
+                                        "border-bottom:1px solid gray;\n"
+                                        "border-left:1px solid graye;\n"
+                                        "border-right:1px solid gray;\n"
+                                        "border-radius:10px;")
         self.rx_lcdNumber.setDigitCount(9)
         self.rx_lcdNumber.setSegmentStyle(QtWidgets.QLCDNumber.Flat)
         self.rx_lcdNumber.setObjectName("rx_lcdNumber")
         self.tx_lcdNumber = QtWidgets.QLCDNumber(self.tab)
         self.tx_lcdNumber.setGeometry(QtCore.QRect(100, 440, 191, 41))
         self.tx_lcdNumber.setStyleSheet("border-top:1px solid gray;\n"
-"border-bottom:1px solid gray;\n"
-"border-left:1px solid graye;\n"
-"border-right:1px solid gray;\n"
-"border-radius:10px;")
+                                        "border-bottom:1px solid gray;\n"
+                                        "border-left:1px solid graye;\n"
+                                        "border-right:1px solid gray;\n"
+                                        "border-radius:10px;")
         self.tx_lcdNumber.setSmallDecimalPoint(False)
         self.tx_lcdNumber.setDigitCount(9)
         self.tx_lcdNumber.setSegmentStyle(QtWidgets.QLCDNumber.Flat)
@@ -198,12 +201,12 @@ class Ui_MainWindow(object):
         font.setKerning(True)
         self.tx_lineEdit.setFont(font)
         self.tx_lineEdit.setStyleSheet("border-radius:15px;\n"
-"border:1px solid gray;\n"
-"font-family:Consolas;\n"
-"font-style:italic;\n"
-"font-weight:bold;\n"
-"color:rgb(236,45,122);\n"
-"background:transparent;")
+                                       "border:1px solid gray;\n"
+                                       "font-family:Consolas;\n"
+                                       "font-style:italic;\n"
+                                       "font-weight:bold;\n"
+                                       "color:rgb(236,45,122);\n"
+                                       "background:transparent;")
         self.tx_lineEdit.setObjectName("tx_lineEdit")
         self.rx_textBrowser = QtWidgets.QTextBrowser(self.tab)
         self.rx_textBrowser.setGeometry(QtCore.QRect(350, 350, 571, 161))
@@ -216,16 +219,16 @@ class Ui_MainWindow(object):
         font.setKerning(True)
         self.rx_textBrowser.setFont(font)
         self.rx_textBrowser.setStyleSheet("background-color: rgb(196, 215, 214);\n"
-"color: rgb(244, 62, 6);\n"
-"border-top:1px solid gray;\n"
-"border-bottom:1px solid gray;\n"
-"border-left:1px solid graye;\n"
-"border-right:1px solid gray;\n"
-"font-family:Consolas;\n"
-"border-radius:15px;\n"
-"background:transparent;\n"
-"font-style:italic;\n"
-"font-weight:bold;")
+                                          "color: rgb(244, 62, 6);\n"
+                                          "border-top:1px solid gray;\n"
+                                          "border-bottom:1px solid gray;\n"
+                                          "border-left:1px solid graye;\n"
+                                          "border-right:1px solid gray;\n"
+                                          "font-family:Consolas;\n"
+                                          "border-radius:15px;\n"
+                                          "background:transparent;\n"
+                                          "font-style:italic;\n"
+                                          "font-weight:bold;")
         self.rx_textBrowser.setObjectName("rx_textBrowser")
         self.Hex_textBrowser = QtWidgets.QTextBrowser(self.tab)
         self.Hex_textBrowser.setGeometry(QtCore.QRect(350, 120, 571, 111))
@@ -238,16 +241,16 @@ class Ui_MainWindow(object):
         font.setKerning(True)
         self.Hex_textBrowser.setFont(font)
         self.Hex_textBrowser.setStyleSheet("\n"
-"color: rgb(15,89,164);\n"
-"border-top:1px solid gray;\n"
-"border-bottom:1px solid gray;\n"
-"border-left:1px solid graye;\n"
-"border-right:1px solid gray;\n"
-"font-family:Consolas;\n"
-"font-style:italic;\n"
-"font-weight:bold;\n"
-"border-radius:15px;\n"
-"background:transparent;")
+                                           "color: rgb(15,89,164);\n"
+                                           "border-top:1px solid gray;\n"
+                                           "border-bottom:1px solid gray;\n"
+                                           "border-left:1px solid graye;\n"
+                                           "border-right:1px solid gray;\n"
+                                           "font-family:Consolas;\n"
+                                           "font-style:italic;\n"
+                                           "font-weight:bold;\n"
+                                           "border-radius:15px;\n"
+                                           "background:transparent;")
         self.Hex_textBrowser.setObjectName("Hex_textBrowser")
         self.pushButton_send = QtWidgets.QPushButton(self.tab)
         self.pushButton_send.setGeometry(QtCore.QRect(640, 250, 91, 51))
@@ -260,14 +263,15 @@ class Ui_MainWindow(object):
         font.setKerning(True)
         self.pushButton_send.setFont(font)
         self.pushButton_send.setStyleSheet("QPushButton { border-top:1px solid gray;\n"
-"border-bottom:1px solid gray;\n"
-"border-left:1px solid graye;\n"
-"border-right:1px solid gray;\n"
-"border-radius:10px; } \n"
-"QPushButton:hover { background-color: rgb(85, 170, 255); }\n"
-"QPushButton:pressed { background-color:rgb(129, 60, 133);}")
+                                           "border-bottom:1px solid gray;\n"
+                                           "border-left:1px solid graye;\n"
+                                           "border-right:1px solid gray;\n"
+                                           "border-radius:10px; } \n"
+                                           "QPushButton:hover { background-color: rgb(85, 170, 255); }\n"
+                                           "QPushButton:pressed { background-color:rgb(129, 60, 133);}")
         icon3 = QtGui.QIcon()
-        icon3.addPixmap(QtGui.QPixmap("f:\\My_Projects\\Temperature-Uart-7.0\\src\\../ico/fj.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon3.addPixmap(QtGui.QPixmap("../ico/fj.ico"), QtGui.QIcon.Normal,
+                        QtGui.QIcon.Off)
         self.pushButton_send.setIcon(icon3)
         self.pushButton_send.setObjectName("pushButton_send")
         self.pushButton_clear_tx = QtWidgets.QPushButton(self.tab)
@@ -281,14 +285,15 @@ class Ui_MainWindow(object):
         font.setKerning(True)
         self.pushButton_clear_tx.setFont(font)
         self.pushButton_clear_tx.setStyleSheet("QPushButton { border-top:1px solid gray;\n"
-"border-bottom:1px solid gray;\n"
-"border-left:1px solid graye;\n"
-"border-right:1px solid gray;\n"
-"border-radius:10px; } \n"
-"QPushButton:hover { background-color: rgb(85, 170, 255); }\n"
-"QPushButton:pressed { background-color:rgb(129, 60, 133);}")
+                                               "border-bottom:1px solid gray;\n"
+                                               "border-left:1px solid graye;\n"
+                                               "border-right:1px solid gray;\n"
+                                               "border-radius:10px; } \n"
+                                               "QPushButton:hover { background-color: rgb(85, 170, 255); }\n"
+                                               "QPushButton:pressed { background-color:rgb(129, 60, 133);}")
         icon4 = QtGui.QIcon()
-        icon4.addPixmap(QtGui.QPixmap("f:\\My_Projects\\Temperature-Uart-7.0\\src\\../ico/clear.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon4.addPixmap(QtGui.QPixmap("../ico/clear.ico"),
+                        QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.pushButton_clear_tx.setIcon(icon4)
         self.pushButton_clear_tx.setObjectName("pushButton_clear_tx")
         self.pushButton_clear_rx = QtWidgets.QPushButton(self.tab)
@@ -303,16 +308,17 @@ class Ui_MainWindow(object):
         self.pushButton_clear_rx.setFont(font)
         self.pushButton_clear_rx.setAutoFillBackground(False)
         self.pushButton_clear_rx.setStyleSheet("QPushButton { border-top:1px solid gray;\n"
-"border-bottom:1px solid gray;\n"
-"border-left:1px solid graye;\n"
-"border-right:1px solid gray;\n"
-"border-radius:10px; } \n"
-"QPushButton:hover { background-color: rgb(85, 170, 255); }\n"
-"QPushButton:pressed { background-color:rgb(129, 60, 133);}\n"
-"\n"
-"")
+                                               "border-bottom:1px solid gray;\n"
+                                               "border-left:1px solid graye;\n"
+                                               "border-right:1px solid gray;\n"
+                                               "border-radius:10px; } \n"
+                                               "QPushButton:hover { background-color: rgb(85, 170, 255); }\n"
+                                               "QPushButton:pressed { background-color:rgb(129, 60, 133);}\n"
+                                               "\n"
+                                               "")
         icon5 = QtGui.QIcon()
-        icon5.addPixmap(QtGui.QPixmap("f:\\My_Projects\\Temperature-Uart-7.0\\src\\../ico/clear1.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon5.addPixmap(QtGui.QPixmap("../ico/clear1.ico"),
+                        QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.pushButton_clear_rx.setIcon(icon5)
         self.pushButton_clear_rx.setCheckable(False)
         self.pushButton_clear_rx.setAutoDefault(False)
@@ -349,8 +355,8 @@ class Ui_MainWindow(object):
         font.setKerning(True)
         self.label_2.setFont(font)
         self.label_2.setStyleSheet("font-family:Consolas;\n"
-"font-style:italic;\n"
-"font-weight:bold;")
+                                   "font-style:italic;\n"
+                                   "font-weight:bold;")
         self.label_2.setObjectName("label_2")
         self.label_6 = QtWidgets.QLabel(self.tab)
         self.label_6.setGeometry(QtCore.QRect(40, 510, 36, 24))
@@ -363,8 +369,8 @@ class Ui_MainWindow(object):
         font.setKerning(True)
         self.label_6.setFont(font)
         self.label_6.setStyleSheet("font-family:Consolas;\n"
-"font-style:italic;\n"
-"font-weight:bold;")
+                                   "font-style:italic;\n"
+                                   "font-weight:bold;")
         self.label_6.setObjectName("label_6")
         self.checkBox_HexSend = QtWidgets.QCheckBox(self.tab)
         self.checkBox_HexSend.setGeometry(QtCore.QRect(390, 262, 71, 26))
@@ -377,8 +383,8 @@ class Ui_MainWindow(object):
         font.setKerning(True)
         self.checkBox_HexSend.setFont(font)
         self.checkBox_HexSend.setStyleSheet("font-family:Consolas;\n"
-"font-style:italic;\n"
-"font-weight:bold;")
+                                            "font-style:italic;\n"
+                                            "font-weight:bold;")
         self.checkBox_HexSend.setChecked(True)
         self.checkBox_HexSend.setObjectName("checkBox_HexSend")
         self.checkBox_AddEnd = QtWidgets.QCheckBox(self.tab)
@@ -406,10 +412,10 @@ class Ui_MainWindow(object):
         font.setKerning(True)
         self.groupBox_2.setFont(font)
         self.groupBox_2.setStyleSheet("QGroupBox#groupBox_2{\n"
-"    border: 1px solid gray;\n"
-"    border-radius:15px;\n"
-"}")
-        self.groupBox_2.setAlignment(QtCore.Qt.AlignJustify|QtCore.Qt.AlignVCenter)
+                                      "    border: 1px solid gray;\n"
+                                      "    border-radius:15px;\n"
+                                      "}")
+        self.groupBox_2.setAlignment(QtCore.Qt.AlignJustify | QtCore.Qt.AlignVCenter)
         self.groupBox_2.setFlat(False)
         self.groupBox_2.setCheckable(False)
         self.groupBox_2.setObjectName("groupBox_2")
@@ -424,8 +430,8 @@ class Ui_MainWindow(object):
         font.setKerning(True)
         self.radioButton_ascii.setFont(font)
         self.radioButton_ascii.setStyleSheet("font-family:Consolas;\n"
-"font-style:italic;\n"
-"font-weight:bold;")
+                                             "font-style:italic;\n"
+                                             "font-weight:bold;")
         self.radioButton_ascii.setChecked(True)
         self.radioButton_ascii.setAutoRepeat(False)
         self.radioButton_ascii.setObjectName("radioButton_ascii")
@@ -441,50 +447,51 @@ class Ui_MainWindow(object):
         self.radioButton_hex.setFont(font)
         self.radioButton_hex.setMouseTracking(False)
         self.radioButton_hex.setStyleSheet("font-family:Consolas;\n"
-"font-style:italic;\n"
-"font-weight:bold;")
+                                           "font-style:italic;\n"
+                                           "font-weight:bold;")
         self.radioButton_hex.setChecked(False)
         self.radioButton_hex.setObjectName("radioButton_hex")
         self.label_10 = QtWidgets.QLabel(self.tab)
         self.label_10.setGeometry(QtCore.QRect(40, 560, 61, 51))
         self.label_10.setText("")
-        self.label_10.setPixmap(QtGui.QPixmap("f:\\My_Projects\\Temperature-Uart-7.0\\src\\../ico/feather.ico"))
+        self.label_10.setPixmap(QtGui.QPixmap("../ico/feather.ico"))
         self.label_10.setScaledContents(True)
         self.label_10.setObjectName("label_10")
         self.label_22 = QtWidgets.QLabel(self.tab)
         self.label_22.setGeometry(QtCore.QRect(870, 71, 41, 41))
         self.label_22.setText("")
-        self.label_22.setPixmap(QtGui.QPixmap("f:\\My_Projects\\Temperature-Uart-7.0\\src\\../ico/maliao.ico"))
+        self.label_22.setPixmap(QtGui.QPixmap("../ico/maliao.ico"))
         self.label_22.setScaledContents(True)
         self.label_22.setObjectName("label_22")
         self.label_11 = QtWidgets.QLabel(self.tab)
         self.label_11.setGeometry(QtCore.QRect(110, 580, 201, 31))
         self.label_11.setStyleSheet("font-family:Consolas;\n"
-"font-style:italic;\n"
-"font-weight:bold;")
+                                    "font-style:italic;\n"
+                                    "font-weight:bold;")
         self.label_11.setObjectName("label_11")
         icon6 = QtGui.QIcon()
-        icon6.addPixmap(QtGui.QPixmap("f:\\My_Projects\\Temperature-Uart-7.0\\src\\../ico/ck.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon6.addPixmap(QtGui.QPixmap("../ico/ck.png"), QtGui.QIcon.Normal,
+                        QtGui.QIcon.Off)
         self.tabWidget.addTab(self.tab, icon6, "")
         self.tab_2 = QtWidgets.QWidget()
         self.tab_2.setObjectName("tab_2")
         self.tem_set_last_lcdNumber = QtWidgets.QLCDNumber(self.tab_2)
         self.tem_set_last_lcdNumber.setGeometry(QtCore.QRect(790, 480, 71, 31))
         self.tem_set_last_lcdNumber.setStyleSheet("border-top:1px solid gray;\n"
-"border-bottom:1px solid gray;\n"
-"border-left:1px solid graye;\n"
-"border-right:1px solid gray;\n"
-"border-radius:10px;")
+                                                  "border-bottom:1px solid gray;\n"
+                                                  "border-left:1px solid graye;\n"
+                                                  "border-right:1px solid gray;\n"
+                                                  "border-radius:10px;")
         self.tem_set_last_lcdNumber.setSegmentStyle(QtWidgets.QLCDNumber.Flat)
         self.tem_set_last_lcdNumber.setObjectName("tem_set_last_lcdNumber")
         self.tem_set_lcdNumber = QtWidgets.QLCDNumber(self.tab_2)
         self.tem_set_lcdNumber.setGeometry(QtCore.QRect(790, 510, 151, 51))
         self.tem_set_lcdNumber.setStyleSheet("border-top:1px solid gray;\n"
-"border-bottom:1px solid gray;\n"
-"border-left:1px solid graye;\n"
-"border-right:1px solid gray;\n"
-"color: rgb(255, 0, 0);\n"
-"border-radius:10px;")
+                                             "border-bottom:1px solid gray;\n"
+                                             "border-left:1px solid graye;\n"
+                                             "border-right:1px solid gray;\n"
+                                             "color: rgb(255, 0, 0);\n"
+                                             "border-radius:10px;")
         self.tem_set_lcdNumber.setSmallDecimalPoint(False)
         self.tem_set_lcdNumber.setSegmentStyle(QtWidgets.QLCDNumber.Flat)
         self.tem_set_lcdNumber.setProperty("value", 0.0)
@@ -501,15 +508,16 @@ class Ui_MainWindow(object):
         font.setKerning(True)
         self.pushButton_tem_set.setFont(font)
         self.pushButton_tem_set.setStyleSheet("QPushButton { border-top:1px solid gray;\n"
-"border-bottom:1px solid gray;\n"
-"border-left:1px solid graye;\n"
-"border-right:1px solid gray;\n"
-" border-radius:10px;} \n"
-"QPushButton:hover { background-color: rgb(85, 170, 255); }\n"
-"QPushButton:pressed { background-color:rgb(129, 60, 133);}\n"
-"")
+                                              "border-bottom:1px solid gray;\n"
+                                              "border-left:1px solid graye;\n"
+                                              "border-right:1px solid gray;\n"
+                                              " border-radius:10px;} \n"
+                                              "QPushButton:hover { background-color: rgb(85, 170, 255); }\n"
+                                              "QPushButton:pressed { background-color:rgb(129, 60, 133);}\n"
+                                              "")
         icon7 = QtGui.QIcon()
-        icon7.addPixmap(QtGui.QPixmap("f:\\My_Projects\\Temperature-Uart-7.0\\src\\../ico/tem.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon7.addPixmap(QtGui.QPixmap("../ico/tem.png"), QtGui.QIcon.Normal,
+                        QtGui.QIcon.Off)
         self.pushButton_tem_set.setIcon(icon7)
         self.pushButton_tem_set.setIconSize(QtCore.QSize(25, 25))
         self.pushButton_tem_set.setObjectName("pushButton_tem_set")
@@ -524,14 +532,14 @@ class Ui_MainWindow(object):
         font.setKerning(True)
         self.doubleSpinBox.setFont(font)
         self.doubleSpinBox.setStyleSheet("font-family:Consolas;\n"
-"font-weight:bold;\n"
-"color: red;\n"
-"border-top:1px solid gray;\n"
-"border-bottom:1px solid gray;\n"
-"border-left:1px solid graye;\n"
-"border-right:1px solid gray;\n"
-"background:transparent;\n"
-"border-radius:15px;")
+                                         "font-weight:bold;\n"
+                                         "color: red;\n"
+                                         "border-top:1px solid gray;\n"
+                                         "border-bottom:1px solid gray;\n"
+                                         "border-left:1px solid graye;\n"
+                                         "border-right:1px solid gray;\n"
+                                         "background:transparent;\n"
+                                         "border-radius:15px;")
         self.doubleSpinBox.setMinimum(15.0)
         self.doubleSpinBox.setMaximum(50.0)
         self.doubleSpinBox.setSingleStep(0.01)
@@ -587,11 +595,11 @@ class Ui_MainWindow(object):
         palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.PlaceholderText, brush)
         self.tem_real_lcdNumber.setPalette(palette)
         self.tem_real_lcdNumber.setStyleSheet("border-top:1px solid gray;\n"
-"border-bottom:1px solid gray;\n"
-"border-left:1px solid graye;\n"
-"border-right:1px solid gray;\n"
-"color: rgb(14, 176, 201);\n"
-"border-radius:10px;")
+                                              "border-bottom:1px solid gray;\n"
+                                              "border-left:1px solid graye;\n"
+                                              "border-right:1px solid gray;\n"
+                                              "color: rgb(14, 176, 201);\n"
+                                              "border-radius:10px;")
         self.tem_real_lcdNumber.setSegmentStyle(QtWidgets.QLCDNumber.Flat)
         self.tem_real_lcdNumber.setProperty("value", 0.0)
         self.tem_real_lcdNumber.setProperty("intValue", 0)
@@ -623,18 +631,18 @@ class Ui_MainWindow(object):
         self.label_note.setGeometry(QtCore.QRect(10, 10, 541, 21))
         self.label_note.setLayoutDirection(QtCore.Qt.RightToLeft)
         self.label_note.setStyleSheet("font-family:Consolas;\n"
-"font-style:italic;\n"
-"font-weight:bold;\n"
-"color: rgb(155, 30, 100);")
+                                      "font-style:italic;\n"
+                                      "font-weight:bold;\n"
+                                      "color: rgb(155, 30, 100);")
         self.label_note.setAlignment(QtCore.Qt.AlignCenter)
         self.label_note.setObjectName("label_note")
         self.label_sub = QtWidgets.QLabel(self.tab_2)
         self.label_sub.setGeometry(QtCore.QRect(580, 10, 361, 21))
         self.label_sub.setLayoutDirection(QtCore.Qt.RightToLeft)
         self.label_sub.setStyleSheet("font-family:Consolas;\n"
-"font-style:italic;\n"
-"font-weight:bold;\n"
-"color: rgb(155, 30, 100);")
+                                     "font-style:italic;\n"
+                                     "font-weight:bold;\n"
+                                     "color: rgb(155, 30, 100);")
         self.label_sub.setAlignment(QtCore.Qt.AlignCenter)
         self.label_sub.setObjectName("label_sub")
         self.pushButton_save = QtWidgets.QPushButton(self.tab_2)
@@ -648,17 +656,17 @@ class Ui_MainWindow(object):
         font.setKerning(True)
         self.pushButton_save.setFont(font)
         self.pushButton_save.setStyleSheet("QPushButton { border-top:1px solid gray;\n"
-"border-bottom:1px solid gray;\n"
-"border-left:1px solid graye;\n"
-"border-right:1px solid gray;\n"
-"border-radius:10px;\n"
-"font-family:Consolas;\n"
-"font-style:italic;\n"
-"font-weight:bold;\n"
-"color: rgb(155, 30, 100);\n"
-" } \n"
-"QPushButton:hover { background-color: rgb(85, 170, 255); }\n"
-"QPushButton:pressed { background-color:rgb(129, 60, 133);}")
+                                           "border-bottom:1px solid gray;\n"
+                                           "border-left:1px solid graye;\n"
+                                           "border-right:1px solid gray;\n"
+                                           "border-radius:10px;\n"
+                                           "font-family:Consolas;\n"
+                                           "font-style:italic;\n"
+                                           "font-weight:bold;\n"
+                                           "color: rgb(155, 30, 100);\n"
+                                           " } \n"
+                                           "QPushButton:hover { background-color: rgb(85, 170, 255); }\n"
+                                           "QPushButton:pressed { background-color:rgb(129, 60, 133);}")
         self.pushButton_save.setCheckable(True)
         self.pushButton_save.setChecked(False)
         self.pushButton_save.setAutoExclusive(True)
@@ -674,17 +682,17 @@ class Ui_MainWindow(object):
         font.setKerning(True)
         self.pushButton_draw.setFont(font)
         self.pushButton_draw.setStyleSheet("QPushButton { border-top:1px solid gray;\n"
-"border-bottom:1px solid gray;\n"
-"border-left:1px solid graye;\n"
-"border-right:1px solid gray;\n"
-"border-radius:10px;\n"
-"font-family:Consolas;\n"
-"font-style:italic;\n"
-"font-weight:bold;\n"
-"color: rgb(155, 30, 100);\n"
-" } \n"
-"QPushButton:hover { background-color: rgb(85, 170, 255); }\n"
-"QPushButton:pressed { background-color:rgb(129, 60, 133);}")
+                                           "border-bottom:1px solid gray;\n"
+                                           "border-left:1px solid graye;\n"
+                                           "border-right:1px solid gray;\n"
+                                           "border-radius:10px;\n"
+                                           "font-family:Consolas;\n"
+                                           "font-style:italic;\n"
+                                           "font-weight:bold;\n"
+                                           "color: rgb(155, 30, 100);\n"
+                                           " } \n"
+                                           "QPushButton:hover { background-color: rgb(85, 170, 255); }\n"
+                                           "QPushButton:pressed { background-color:rgb(129, 60, 133);}")
         self.pushButton_draw.setCheckable(True)
         self.pushButton_draw.setChecked(False)
         self.pushButton_draw.setAutoExclusive(True)
@@ -700,17 +708,17 @@ class Ui_MainWindow(object):
         font.setKerning(True)
         self.pushButton_clear.setFont(font)
         self.pushButton_clear.setStyleSheet("QPushButton { border-top:1px solid gray;\n"
-"border-bottom:1px solid gray;\n"
-"border-left:1px solid graye;\n"
-"border-right:1px solid gray;\n"
-"border-radius:10px;\n"
-"font-family:Consolas;\n"
-"font-style:italic;\n"
-"font-weight:bold;\n"
-"color: rgb(155, 30, 100);\n"
-" } \n"
-"QPushButton:hover { background-color: rgb(85, 170, 255); }\n"
-"QPushButton:pressed { background-color:rgb(129, 60, 133);}")
+                                            "border-bottom:1px solid gray;\n"
+                                            "border-left:1px solid graye;\n"
+                                            "border-right:1px solid gray;\n"
+                                            "border-radius:10px;\n"
+                                            "font-family:Consolas;\n"
+                                            "font-style:italic;\n"
+                                            "font-weight:bold;\n"
+                                            "color: rgb(155, 30, 100);\n"
+                                            " } \n"
+                                            "QPushButton:hover { background-color: rgb(85, 170, 255); }\n"
+                                            "QPushButton:pressed { background-color:rgb(129, 60, 133);}")
         self.pushButton_clear.setCheckable(True)
         self.pushButton_clear.setChecked(True)
         self.pushButton_clear.setAutoExclusive(True)
@@ -725,16 +733,16 @@ class Ui_MainWindow(object):
         font.setWeight(75)
         self.pushButton_start.setFont(font)
         self.pushButton_start.setStyleSheet("QPushButton { border-top:1px solid gray;\n"
-"border-bottom:1px solid gray;\n"
-"border-left:1px solid graye;\n"
-"border-right:1px solid gray;\n"
-"border-radius:10px;\n"
-"font-family:Consolas;\n"
-"font-style:italic;\n"
-"font-weight:bold;\n"
-" } \n"
-"QPushButton:hover { background-color: rgb(85, 170, 255); }\n"
-"QPushButton:pressed { background-color:rgb(129, 60, 133);}")
+                                            "border-bottom:1px solid gray;\n"
+                                            "border-left:1px solid graye;\n"
+                                            "border-right:1px solid gray;\n"
+                                            "border-radius:10px;\n"
+                                            "font-family:Consolas;\n"
+                                            "font-style:italic;\n"
+                                            "font-weight:bold;\n"
+                                            " } \n"
+                                            "QPushButton:hover { background-color: rgb(85, 170, 255); }\n"
+                                            "QPushButton:pressed { background-color:rgb(129, 60, 133);}")
         self.pushButton_start.setCheckable(True)
         self.pushButton_start.setChecked(False)
         self.pushButton_start.setAutoExclusive(True)
@@ -750,22 +758,23 @@ class Ui_MainWindow(object):
         font.setKerning(True)
         self.pushButton_stop.setFont(font)
         self.pushButton_stop.setStyleSheet("QPushButton { border-top:1px solid gray;\n"
-"border-bottom:1px solid gray;\n"
-"border-left:1px solid graye;\n"
-"border-right:1px solid gray;\n"
-"border-radius:10px;\n"
-"font-family:Consolas;\n"
-"font-style:italic;\n"
-"font-weight:bold;\n"
-" } \n"
-"QPushButton:hover { background-color: rgb(85, 170, 255); }\n"
-"QPushButton:pressed { background-color:rgb(129, 60, 133);}")
+                                           "border-bottom:1px solid gray;\n"
+                                           "border-left:1px solid graye;\n"
+                                           "border-right:1px solid gray;\n"
+                                           "border-radius:10px;\n"
+                                           "font-family:Consolas;\n"
+                                           "font-style:italic;\n"
+                                           "font-weight:bold;\n"
+                                           " } \n"
+                                           "QPushButton:hover { background-color: rgb(85, 170, 255); }\n"
+                                           "QPushButton:pressed { background-color:rgb(129, 60, 133);}")
         self.pushButton_stop.setCheckable(True)
         self.pushButton_stop.setChecked(True)
         self.pushButton_stop.setAutoExclusive(True)
         self.pushButton_stop.setObjectName("pushButton_stop")
         icon8 = QtGui.QIcon()
-        icon8.addPixmap(QtGui.QPixmap("f:\\My_Projects\\Temperature-Uart-7.0\\src\\../ico/zhexian.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon8.addPixmap(QtGui.QPixmap("../ico/zhexian.ico"),
+                        QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.tabWidget.addTab(self.tab_2, icon8, "")
         self.tab_4 = QtWidgets.QWidget()
         self.tab_4.setObjectName("tab_4")
@@ -786,24 +795,25 @@ class Ui_MainWindow(object):
         font.setKerning(True)
         self.pushButton_cycle.setFont(font)
         self.pushButton_cycle.setStyleSheet("QPushButton { border-top:1px solid gray;\n"
-"border-bottom:1px solid gray;\n"
-"border-left:1px solid graye;\n"
-"border-right:1px solid gray;\n"
-" border-radius:10px;} \n"
-"QPushButton:hover { background-color: rgb(85, 170, 255); }\n"
-"QPushButton:pressed { background-color:rgb(129, 60, 133);}\n"
-"")
+                                            "border-bottom:1px solid gray;\n"
+                                            "border-left:1px solid graye;\n"
+                                            "border-right:1px solid gray;\n"
+                                            " border-radius:10px;} \n"
+                                            "QPushButton:hover { background-color: rgb(85, 170, 255); }\n"
+                                            "QPushButton:pressed { background-color:rgb(129, 60, 133);}\n"
+                                            "")
         icon9 = QtGui.QIcon()
-        icon9.addPixmap(QtGui.QPixmap("f:\\My_Projects\\Temperature-Uart-7.0\\src\\../ico/sd.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon9.addPixmap(QtGui.QPixmap("../ico/sd.ico"), QtGui.QIcon.Normal,
+                        QtGui.QIcon.Off)
         self.pushButton_cycle.setIcon(icon9)
         self.pushButton_cycle.setIconSize(QtCore.QSize(25, 25))
         self.pushButton_cycle.setObjectName("pushButton_cycle")
         self.groupBox_cycle = QtWidgets.QGroupBox(self.tab_4)
         self.groupBox_cycle.setGeometry(QtCore.QRect(730, 20, 211, 281))
         self.groupBox_cycle.setStyleSheet("QGroupBox#groupBox_cycle{\n"
-"    border: 1px solid gray;\n"
-"    border-radius:15px;\n"
-"}")
+                                          "    border: 1px solid gray;\n"
+                                          "    border-radius:15px;\n"
+                                          "}")
         self.groupBox_cycle.setObjectName("groupBox_cycle")
         self.label_14 = QtWidgets.QLabel(self.groupBox_cycle)
         self.label_14.setGeometry(QtCore.QRect(60, 30, 71, 21))
@@ -832,27 +842,27 @@ class Ui_MainWindow(object):
         self.slider_tem_1.setGeometry(QtCore.QRect(50, 50, 151, 20))
         self.slider_tem_1.setAutoFillBackground(False)
         self.slider_tem_1.setStyleSheet("QSlider::groove:horizontal{ \n"
-"     height: 12px; \n"
-"     left: 0px; \n"
-"     right: 0px; \n"
-"     border:0px;   \n"
-"     border-radius:6px;   \n"
-"     background:rgba(0,0,0,50);\n"
-" } \n"
-"QSlider::handle:horizontal{ \n"
-"       width:  10px; \n"
-"       height: 5px; \n"
-"      margin-top: -2px; \n"
-"   \n"
-"      margin-bottom: -2px; \n"
-"    margin-left: 0px; \n"
-"        margin-right: 0px; \n"
-"        background:rgba(252,140,35,1);\n"
-" } \n"
-"\n"
-"QSlider::sub-page:horizontal{\n"
-"       background:rgba(80,166,234,1);\n"
-" }")
+                                        "     height: 12px; \n"
+                                        "     left: 0px; \n"
+                                        "     right: 0px; \n"
+                                        "     border:0px;   \n"
+                                        "     border-radius:6px;   \n"
+                                        "     background:rgba(0,0,0,50);\n"
+                                        " } \n"
+                                        "QSlider::handle:horizontal{ \n"
+                                        "       width:  10px; \n"
+                                        "       height: 5px; \n"
+                                        "      margin-top: -2px; \n"
+                                        "   \n"
+                                        "      margin-bottom: -2px; \n"
+                                        "    margin-left: 0px; \n"
+                                        "        margin-right: 0px; \n"
+                                        "        background:rgba(252,140,35,1);\n"
+                                        " } \n"
+                                        "\n"
+                                        "QSlider::sub-page:horizontal{\n"
+                                        "       background:rgba(80,166,234,1);\n"
+                                        " }")
         self.slider_tem_1.setMinimum(10)
         self.slider_tem_1.setMaximum(200)
         self.slider_tem_1.setSingleStep(1)
@@ -862,26 +872,26 @@ class Ui_MainWindow(object):
         self.slider_tem_2.setEnabled(False)
         self.slider_tem_2.setGeometry(QtCore.QRect(50, 90, 151, 20))
         self.slider_tem_2.setStyleSheet("QSlider::groove:horizontal{ \n"
-"     height: 12px; \n"
-"     left: 0px; \n"
-"     right: 0px; \n"
-"     border:0px;   \n"
-"     border-radius:6px;   \n"
-"     background:rgba(0,0,0,50);\n"
-" } \n"
-"QSlider::handle:horizontal{ \n"
-"       width:  10px; \n"
-"       height: 5px; \n"
-"      margin-top: -2px; \n"
-"       margin-left: 0px; \n"
-"      margin-bottom: -2px; \n"
-"        margin-right: 0px; \n"
-"        background:gray;\n"
-" } \n"
-"\n"
-"QSlider::sub-page:horizontal{\n"
-"       background:rgba(80,166,234,1);\n"
-" }")
+                                        "     height: 12px; \n"
+                                        "     left: 0px; \n"
+                                        "     right: 0px; \n"
+                                        "     border:0px;   \n"
+                                        "     border-radius:6px;   \n"
+                                        "     background:rgba(0,0,0,50);\n"
+                                        " } \n"
+                                        "QSlider::handle:horizontal{ \n"
+                                        "       width:  10px; \n"
+                                        "       height: 5px; \n"
+                                        "      margin-top: -2px; \n"
+                                        "       margin-left: 0px; \n"
+                                        "      margin-bottom: -2px; \n"
+                                        "        margin-right: 0px; \n"
+                                        "        background:gray;\n"
+                                        " } \n"
+                                        "\n"
+                                        "QSlider::sub-page:horizontal{\n"
+                                        "       background:rgba(80,166,234,1);\n"
+                                        " }")
         self.slider_tem_2.setMinimum(10)
         self.slider_tem_2.setMaximum(200)
         self.slider_tem_2.setOrientation(QtCore.Qt.Horizontal)
@@ -923,19 +933,19 @@ class Ui_MainWindow(object):
         self.slider_number.setGeometry(QtCore.QRect(10, 50, 22, 141))
         self.slider_number.setLayoutDirection(QtCore.Qt.LeftToRight)
         self.slider_number.setStyleSheet("QSlider::groove:vertical{ \n"
-" \n"
-"     background:rgba(0,0,0,50);\n"
-" } \n"
-"QSlider::handle:vertical{ \n"
-"\n"
-"     width:  10px; \n"
-"       height: 15px; \n"
-"        background:green;\n"
-" } \n"
-"\n"
-"QSlider::sub-page:vertical{\n"
-"       background:rgba(80,166,234,1);\n"
-" }")
+                                         " \n"
+                                         "     background:rgba(0,0,0,50);\n"
+                                         " } \n"
+                                         "QSlider::handle:vertical{ \n"
+                                         "\n"
+                                         "     width:  10px; \n"
+                                         "       height: 15px; \n"
+                                         "        background:green;\n"
+                                         " } \n"
+                                         "\n"
+                                         "QSlider::sub-page:vertical{\n"
+                                         "       background:rgba(80,166,234,1);\n"
+                                         " }")
         self.slider_number.setMinimum(1)
         self.slider_number.setMaximum(4)
         self.slider_number.setProperty("value", 1)
@@ -949,26 +959,26 @@ class Ui_MainWindow(object):
         self.slider_tem_3.setEnabled(False)
         self.slider_tem_3.setGeometry(QtCore.QRect(50, 130, 151, 20))
         self.slider_tem_3.setStyleSheet("QSlider::groove:horizontal{ \n"
-"     height: 12px; \n"
-"     left: 0px; \n"
-"     right: 0px; \n"
-"     border:0px;   \n"
-"     border-radius:6px;   \n"
-"     background:rgba(0,0,0,50);\n"
-" } \n"
-"QSlider::handle:horizontal{ \n"
-"       width:  10px; \n"
-"       height: 5px; \n"
-"      margin-top: -2px; \n"
-"       margin-left: 0px; \n"
-"      margin-bottom: -2px; \n"
-"        margin-right: 0px; \n"
-"        background:gray;\n"
-" } \n"
-"\n"
-"QSlider::sub-page:horizontal{\n"
-"       background:rgba(80,166,234,1);\n"
-" }")
+                                        "     height: 12px; \n"
+                                        "     left: 0px; \n"
+                                        "     right: 0px; \n"
+                                        "     border:0px;   \n"
+                                        "     border-radius:6px;   \n"
+                                        "     background:rgba(0,0,0,50);\n"
+                                        " } \n"
+                                        "QSlider::handle:horizontal{ \n"
+                                        "       width:  10px; \n"
+                                        "       height: 5px; \n"
+                                        "      margin-top: -2px; \n"
+                                        "       margin-left: 0px; \n"
+                                        "      margin-bottom: -2px; \n"
+                                        "        margin-right: 0px; \n"
+                                        "        background:gray;\n"
+                                        " } \n"
+                                        "\n"
+                                        "QSlider::sub-page:horizontal{\n"
+                                        "       background:rgba(80,166,234,1);\n"
+                                        " }")
         self.slider_tem_3.setMinimum(10)
         self.slider_tem_3.setMaximum(200)
         self.slider_tem_3.setOrientation(QtCore.Qt.Horizontal)
@@ -1010,26 +1020,26 @@ class Ui_MainWindow(object):
         self.slider_tem_4.setEnabled(False)
         self.slider_tem_4.setGeometry(QtCore.QRect(50, 170, 151, 20))
         self.slider_tem_4.setStyleSheet("QSlider::groove:horizontal{ \n"
-"     height: 12px; \n"
-"     left: 0px; \n"
-"     right: 0px; \n"
-"     border:0px;   \n"
-"     border-radius:6px;   \n"
-"     background:rgba(0,0,0,50);\n"
-" } \n"
-"QSlider::handle:horizontal{ \n"
-"       width:  10px; \n"
-"       height: 5px; \n"
-"      margin-top: -2px; \n"
-"       margin-left: 0px; \n"
-"      margin-bottom: -2px; \n"
-"        margin-right: 0px; \n"
-"        background:gray;\n"
-" } \n"
-"\n"
-"QSlider::sub-page:horizontal{\n"
-"       background:rgba(80,166,234,1);\n"
-" }")
+                                        "     height: 12px; \n"
+                                        "     left: 0px; \n"
+                                        "     right: 0px; \n"
+                                        "     border:0px;   \n"
+                                        "     border-radius:6px;   \n"
+                                        "     background:rgba(0,0,0,50);\n"
+                                        " } \n"
+                                        "QSlider::handle:horizontal{ \n"
+                                        "       width:  10px; \n"
+                                        "       height: 5px; \n"
+                                        "      margin-top: -2px; \n"
+                                        "       margin-left: 0px; \n"
+                                        "      margin-bottom: -2px; \n"
+                                        "        margin-right: 0px; \n"
+                                        "        background:gray;\n"
+                                        " } \n"
+                                        "\n"
+                                        "QSlider::sub-page:horizontal{\n"
+                                        "       background:rgba(80,166,234,1);\n"
+                                        " }")
         self.slider_tem_4.setMinimum(10)
         self.slider_tem_4.setMaximum(200)
         self.slider_tem_4.setOrientation(QtCore.Qt.Horizontal)
@@ -1048,27 +1058,27 @@ class Ui_MainWindow(object):
         self.slider_time = QtWidgets.QSlider(self.groupBox_cycle)
         self.slider_time.setGeometry(QtCore.QRect(10, 230, 191, 20))
         self.slider_time.setStyleSheet("QSlider::groove:horizontal{ \n"
-"     height: 12px; \n"
-"     left: 0px; \n"
-"     right: 0px; \n"
-"     border:0px;   \n"
-"     border-radius:6px;   \n"
-"     background:rgba(0,0,0,50);\n"
-" } \n"
-"QSlider::handle:horizontal{ \n"
-"       width:  10px; \n"
-"       height: 5px; \n"
-"      margin-top: -2px; \n"
-"   \n"
-"      margin-bottom: -2px; \n"
-"    margin-left: 0px; \n"
-"        margin-right: 0px; \n"
-"        background:rgba(126,22,113,1);\n"
-" } \n"
-"\n"
-"QSlider::sub-page:horizontal{\n"
-"       background:rgba(80,166,234,1);\n"
-" }")
+                                       "     height: 12px; \n"
+                                       "     left: 0px; \n"
+                                       "     right: 0px; \n"
+                                       "     border:0px;   \n"
+                                       "     border-radius:6px;   \n"
+                                       "     background:rgba(0,0,0,50);\n"
+                                       " } \n"
+                                       "QSlider::handle:horizontal{ \n"
+                                       "       width:  10px; \n"
+                                       "       height: 5px; \n"
+                                       "      margin-top: -2px; \n"
+                                       "   \n"
+                                       "      margin-bottom: -2px; \n"
+                                       "    margin-left: 0px; \n"
+                                       "        margin-right: 0px; \n"
+                                       "        background:rgba(126,22,113,1);\n"
+                                       " } \n"
+                                       "\n"
+                                       "QSlider::sub-page:horizontal{\n"
+                                       "       background:rgba(80,166,234,1);\n"
+                                       " }")
         self.slider_time.setMinimum(10)
         self.slider_time.setMaximum(120)
         self.slider_time.setProperty("value", 10)
@@ -1107,7 +1117,7 @@ class Ui_MainWindow(object):
         font.setWeight(75)
         self.label_21.setFont(font)
         self.label_21.setStyleSheet("\n"
-"color: rgb(255, 0, 0);")
+                                    "color: rgb(255, 0, 0);")
         self.label_21.setAlignment(QtCore.Qt.AlignCenter)
         self.label_21.setObjectName("label_21")
         self.label_real_tem = QtWidgets.QLabel(self.tab_4)
@@ -1132,7 +1142,7 @@ class Ui_MainWindow(object):
         font.setWeight(75)
         self.label_set_tem.setFont(font)
         self.label_set_tem.setStyleSheet("\n"
-"color: rgb(255, 0, 0);")
+                                         "color: rgb(255, 0, 0);")
         self.label_set_tem.setAlignment(QtCore.Qt.AlignCenter)
         self.label_set_tem.setObjectName("label_set_tem")
         self.pushButton_cycle_start = QtWidgets.QPushButton(self.tab_4)
@@ -1147,18 +1157,19 @@ class Ui_MainWindow(object):
         self.pushButton_cycle_start.setFont(font)
         self.pushButton_cycle_start.setAutoFillBackground(False)
         self.pushButton_cycle_start.setStyleSheet("QPushButton { border-top:1px solid gray;\n"
-"border-bottom:1px solid gray;\n"
-"border-left:1px solid graye;\n"
-"border-right:1px solid gray;\n"
-"border-radius:10px;\n"
-"\n"
-" } \n"
-"QPushButton:hover { background-color: rgb(85, 170, 255); }\n"
-"QPushButton:pressed { background-color:rgb(129, 60, 133);}\n"
-"\n"
-"")
+                                                  "border-bottom:1px solid gray;\n"
+                                                  "border-left:1px solid graye;\n"
+                                                  "border-right:1px solid gray;\n"
+                                                  "border-radius:10px;\n"
+                                                  "\n"
+                                                  " } \n"
+                                                  "QPushButton:hover { background-color: rgb(85, 170, 255); }\n"
+                                                  "QPushButton:pressed { background-color:rgb(129, 60, 133);}\n"
+                                                  "\n"
+                                                  "")
         icon10 = QtGui.QIcon()
-        icon10.addPixmap(QtGui.QPixmap("f:\\My_Projects\\Temperature-Uart-7.0\\src\\../ico/ks.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon10.addPixmap(QtGui.QPixmap("../ico/ks.ico"), QtGui.QIcon.Normal,
+                         QtGui.QIcon.Off)
         self.pushButton_cycle_start.setIcon(icon10)
         self.pushButton_cycle_start.setCheckable(False)
         self.pushButton_cycle_start.setAutoDefault(False)
@@ -1176,16 +1187,17 @@ class Ui_MainWindow(object):
         self.pushButton_cycle_stop.setFont(font)
         self.pushButton_cycle_stop.setAutoFillBackground(False)
         self.pushButton_cycle_stop.setStyleSheet("QPushButton { border-top:1px solid gray;\n"
-"border-bottom:1px solid gray;\n"
-"border-left:1px solid graye;\n"
-"border-right:1px solid gray;\n"
-"border-radius:10px; } \n"
-"QPushButton:hover { background-color: rgb(85, 170, 255); }\n"
-"QPushButton:pressed { background-color:rgb(129, 60, 133);}\n"
-"\n"
-"")
+                                                 "border-bottom:1px solid gray;\n"
+                                                 "border-left:1px solid graye;\n"
+                                                 "border-right:1px solid gray;\n"
+                                                 "border-radius:10px; } \n"
+                                                 "QPushButton:hover { background-color: rgb(85, 170, 255); }\n"
+                                                 "QPushButton:pressed { background-color:rgb(129, 60, 133);}\n"
+                                                 "\n"
+                                                 "")
         icon11 = QtGui.QIcon()
-        icon11.addPixmap(QtGui.QPixmap("f:\\My_Projects\\Temperature-Uart-7.0\\src\\../ico/tingzhi.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon11.addPixmap(QtGui.QPixmap("../ico/tingzhi.ico"),
+                         QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.pushButton_cycle_stop.setIcon(icon11)
         self.pushButton_cycle_stop.setCheckable(False)
         self.pushButton_cycle_stop.setChecked(False)
@@ -1202,9 +1214,9 @@ class Ui_MainWindow(object):
         font.setWeight(75)
         self.label_real_tem_2.setFont(font)
         self.label_real_tem_2.setStyleSheet("font-family:Consolas;\n"
-"font-style:italic;\n"
-"font-weight:bold;\n"
-"color: rgb(67, 178, 68);")
+                                            "font-style:italic;\n"
+                                            "font-weight:bold;\n"
+                                            "color: rgb(67, 178, 68);")
         self.label_real_tem_2.setAlignment(QtCore.Qt.AlignCenter)
         self.label_real_tem_2.setObjectName("label_real_tem_2")
         self.label_real_tem_3 = QtWidgets.QLabel(self.tab_4)
@@ -1217,19 +1229,19 @@ class Ui_MainWindow(object):
         font.setWeight(75)
         self.label_real_tem_3.setFont(font)
         self.label_real_tem_3.setStyleSheet("font-family:Consolas;\n"
-"font-style:italic;\n"
-"font-weight:bold;\n"
-"color: rgb(255, 0, 0);")
+                                            "font-style:italic;\n"
+                                            "font-weight:bold;\n"
+                                            "color: rgb(255, 0, 0);")
         self.label_real_tem_3.setAlignment(QtCore.Qt.AlignCenter)
         self.label_real_tem_3.setObjectName("label_real_tem_3")
         self.label_note_cycle = QtWidgets.QLabel(self.tab_4)
         self.label_note_cycle.setGeometry(QtCore.QRect(10, 10, 711, 21))
         self.label_note_cycle.setLayoutDirection(QtCore.Qt.RightToLeft)
         self.label_note_cycle.setStyleSheet("font-family:Consolas;\n"
-"font-style:italic;\n"
-"font-weight:bold;\n"
-"color: rgb(155, 30, 100);")
-        self.label_note_cycle.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+                                            "font-style:italic;\n"
+                                            "font-weight:bold;\n"
+                                            "color: rgb(155, 30, 100);")
+        self.label_note_cycle.setAlignment(QtCore.Qt.AlignRight | QtCore.Qt.AlignTrailing | QtCore.Qt.AlignVCenter)
         self.label_note_cycle.setObjectName("label_note_cycle")
         self.pushButton_draw_cycle = QtWidgets.QPushButton(self.tab_4)
         self.pushButton_draw_cycle.setGeometry(QtCore.QRect(150, 580, 111, 31))
@@ -1242,17 +1254,17 @@ class Ui_MainWindow(object):
         font.setKerning(True)
         self.pushButton_draw_cycle.setFont(font)
         self.pushButton_draw_cycle.setStyleSheet("QPushButton { border-top:1px solid gray;\n"
-"border-bottom:1px solid gray;\n"
-"border-left:1px solid graye;\n"
-"border-right:1px solid gray;\n"
-"border-radius:10px;\n"
-"font-family:Consolas;\n"
-"font-style:italic;\n"
-"font-weight:bold;\n"
-"color: rgb(155, 30, 100);\n"
-" } \n"
-"QPushButton:hover { background-color: rgb(85, 170, 255); }\n"
-"QPushButton:pressed { background-color:rgb(129, 60, 133);}")
+                                                 "border-bottom:1px solid gray;\n"
+                                                 "border-left:1px solid graye;\n"
+                                                 "border-right:1px solid gray;\n"
+                                                 "border-radius:10px;\n"
+                                                 "font-family:Consolas;\n"
+                                                 "font-style:italic;\n"
+                                                 "font-weight:bold;\n"
+                                                 "color: rgb(155, 30, 100);\n"
+                                                 " } \n"
+                                                 "QPushButton:hover { background-color: rgb(85, 170, 255); }\n"
+                                                 "QPushButton:pressed { background-color:rgb(129, 60, 133);}")
         self.pushButton_draw_cycle.setCheckable(True)
         self.pushButton_draw_cycle.setChecked(False)
         self.pushButton_draw_cycle.setAutoExclusive(True)
@@ -1268,18 +1280,18 @@ class Ui_MainWindow(object):
         font.setKerning(True)
         self.pushButton_save_cycle.setFont(font)
         self.pushButton_save_cycle.setStyleSheet("QPushButton { border-top:1px solid gray;\n"
-"border-bottom:1px solid gray;\n"
-"border-left:1px solid graye;\n"
-"border-right:1px solid gray;\n"
-"border-radius:10px;\n"
-"font-family:Consolas;\n"
-"font-style:italic;\n"
-"font-weight:bold;\n"
-"color: rgb(155, 30, 100);\n"
-" } \n"
-"QPushButton:hover { background-color: rgb(85, 170, 255); }\n"
-"QPushButton:pressed { background-color:rgb(129, 60, 133);}\n"
-"")
+                                                 "border-bottom:1px solid gray;\n"
+                                                 "border-left:1px solid graye;\n"
+                                                 "border-right:1px solid gray;\n"
+                                                 "border-radius:10px;\n"
+                                                 "font-family:Consolas;\n"
+                                                 "font-style:italic;\n"
+                                                 "font-weight:bold;\n"
+                                                 "color: rgb(155, 30, 100);\n"
+                                                 " } \n"
+                                                 "QPushButton:hover { background-color: rgb(85, 170, 255); }\n"
+                                                 "QPushButton:pressed { background-color:rgb(129, 60, 133);}\n"
+                                                 "")
         self.pushButton_save_cycle.setCheckable(True)
         self.pushButton_save_cycle.setChecked(False)
         self.pushButton_save_cycle.setAutoExclusive(True)
@@ -1295,23 +1307,24 @@ class Ui_MainWindow(object):
         font.setKerning(True)
         self.pushButton_clear_cycle.setFont(font)
         self.pushButton_clear_cycle.setStyleSheet("QPushButton { border-top:1px solid gray;\n"
-"border-bottom:1px solid gray;\n"
-"border-left:1px solid graye;\n"
-"border-right:1px solid gray;\n"
-"border-radius:10px;\n"
-"font-family:Consolas;\n"
-"font-style:italic;\n"
-"font-weight:bold;\n"
-"color: rgb(155, 30, 100);\n"
-" } \n"
-"QPushButton:hover { background-color: rgb(85, 170, 255); }\n"
-"QPushButton:pressed { background-color:rgb(129, 60, 133);}")
+                                                  "border-bottom:1px solid gray;\n"
+                                                  "border-left:1px solid graye;\n"
+                                                  "border-right:1px solid gray;\n"
+                                                  "border-radius:10px;\n"
+                                                  "font-family:Consolas;\n"
+                                                  "font-style:italic;\n"
+                                                  "font-weight:bold;\n"
+                                                  "color: rgb(155, 30, 100);\n"
+                                                  " } \n"
+                                                  "QPushButton:hover { background-color: rgb(85, 170, 255); }\n"
+                                                  "QPushButton:pressed { background-color:rgb(129, 60, 133);}")
         self.pushButton_clear_cycle.setCheckable(True)
         self.pushButton_clear_cycle.setChecked(True)
         self.pushButton_clear_cycle.setAutoExclusive(True)
         self.pushButton_clear_cycle.setObjectName("pushButton_clear_cycle")
         icon12 = QtGui.QIcon()
-        icon12.addPixmap(QtGui.QPixmap("f:\\My_Projects\\Temperature-Uart-7.0\\src\\../ico/lianxu.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon12.addPixmap(QtGui.QPixmap("../ico/lianxu.ico"),
+                         QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.tabWidget.addTab(self.tab_4, icon12, "")
         self.tab_3 = QtWidgets.QWidget()
         self.tab_3.setObjectName("tab_3")
@@ -1362,28 +1375,28 @@ class Ui_MainWindow(object):
         self.label_datetime = QtWidgets.QLabel(self.tab_3)
         self.label_datetime.setGeometry(QtCore.QRect(510, 590, 111, 21))
         self.label_datetime.setStyleSheet("font-family:楷体;\n"
-"font-weight:bold;\n"
-"font-size:15px;\n"
-"color:white;\n"
-"border-bottom-right-radius:20px;")
+                                          "font-weight:bold;\n"
+                                          "font-size:15px;\n"
+                                          "color:white;\n"
+                                          "border-bottom-right-radius:20px;")
         self.label_datetime.setObjectName("label_datetime")
         self.label_space2 = QtWidgets.QLabel(self.tab_3)
         self.label_space2.setGeometry(QtCore.QRect(500, 550, 91, 16))
         self.label_space2.setStyleSheet("font-family:Consolas;\n"
-"font-weight:bold;\n"
-"font-size:15px;\n"
-"font-style:italic;\n"
-"color:white;")
+                                        "font-weight:bold;\n"
+                                        "font-size:15px;\n"
+                                        "font-style:italic;\n"
+                                        "color:white;")
         self.label_space2.setObjectName("label_space2")
         self.progressBar = QtWidgets.QProgressBar(self.tab_3)
         self.progressBar.setGeometry(QtCore.QRect(640, 550, 191, 21))
         self.progressBar.setLayoutDirection(QtCore.Qt.LeftToRight)
         self.progressBar.setAutoFillBackground(False)
         self.progressBar.setStyleSheet("font-family:楷体;\n"
-"font-weight:bold;\n"
-"font-size:15px;\n"
-"border:none;\n"
-"")
+                                       "font-weight:bold;\n"
+                                       "font-size:15px;\n"
+                                       "border:none;\n"
+                                       "")
         self.progressBar.setProperty("value", 100)
         self.progressBar.setAlignment(QtCore.Qt.AlignCenter)
         self.progressBar.setOrientation(QtCore.Qt.Horizontal)
@@ -1392,8 +1405,8 @@ class Ui_MainWindow(object):
         self.label_space1 = QtWidgets.QLabel(self.tab_3)
         self.label_space1.setGeometry(QtCore.QRect(390, 550, 91, 16))
         self.label_space1.setStyleSheet("font-family:楷体;\n"
-"font-weight:bold;\n"
-"font-size:15px;")
+                                        "font-weight:bold;\n"
+                                        "font-size:15px;")
         self.label_space1.setObjectName("label_space1")
         self.comboBox_baud = QtWidgets.QComboBox(self.tab_3)
         self.comboBox_baud.setGeometry(QtCore.QRect(180, 50, 151, 41))
@@ -1431,9 +1444,9 @@ class Ui_MainWindow(object):
         font.setWeight(75)
         self.label_main_id.setFont(font)
         self.label_main_id.setStyleSheet("color:rgb(208,16,76);\n"
-"font-family:Consolas;\n"
-"font-style:italic;\n"
-"font-weight:bold;")
+                                         "font-family:Consolas;\n"
+                                         "font-style:italic;\n"
+                                         "font-weight:bold;")
         self.label_main_id.setObjectName("label_main_id")
         self.label_serial_id = QtWidgets.QLabel(self.tab_3)
         self.label_serial_id.setGeometry(QtCore.QRect(50, 360, 241, 22))
@@ -1445,12 +1458,13 @@ class Ui_MainWindow(object):
         font.setWeight(75)
         self.label_serial_id.setFont(font)
         self.label_serial_id.setStyleSheet("color:rgb(208,16,76);\n"
-"font-family:Consolas;\n"
-"font-style:italic;\n"
-"font-weight:bold;")
+                                           "font-family:Consolas;\n"
+                                           "font-style:italic;\n"
+                                           "font-weight:bold;")
         self.label_serial_id.setObjectName("label_serial_id")
         icon13 = QtGui.QIcon()
-        icon13.addPixmap(QtGui.QPixmap("f:\\My_Projects\\Temperature-Uart-7.0\\src\\../ico/set1.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon13.addPixmap(QtGui.QPixmap("../ico/set1.ico"),
+                         QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.tabWidget.addTab(self.tab_3, icon13, "")
         MainWindow.setCentralWidget(self.centralwidget)
         self.menuBar = QtWidgets.QMenuBar(MainWindow)
@@ -1461,8 +1475,8 @@ class Ui_MainWindow(object):
         sizePolicy.setHeightForWidth(self.menuBar.sizePolicy().hasHeightForWidth())
         self.menuBar.setSizePolicy(sizePolicy)
         self.menuBar.setStyleSheet("text-align:center\n"
-"\n"
-"    ")
+                                   "\n"
+                                   "    ")
         self.menuBar.setDefaultUp(False)
         self.menuBar.setNativeMenuBar(True)
         self.menuBar.setObjectName("menuBar")
@@ -1492,27 +1506,30 @@ class Ui_MainWindow(object):
         self.statusBar.setLayoutDirection(QtCore.Qt.LeftToRight)
         self.statusBar.setAutoFillBackground(False)
         self.statusBar.setStyleSheet("font-family:Consolas;\n"
-"font-weight:bold;\n"
-"background:rgb(46,49,124);\n"
-"\n"
-"")
+                                     "font-weight:bold;\n"
+                                     "background:rgb(46,49,124);\n"
+                                     "\n"
+                                     "")
         self.statusBar.setInputMethodHints(QtCore.Qt.ImhDialableCharactersOnly)
         self.statusBar.setSizeGripEnabled(False)
         self.statusBar.setObjectName("statusBar")
         MainWindow.setStatusBar(self.statusBar)
         self.action_sysm = QtWidgets.QAction(MainWindow)
         icon14 = QtGui.QIcon()
-        icon14.addPixmap(QtGui.QPixmap("f:\\My_Projects\\Temperature-Uart-7.0\\src\\../ico/shouce.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon14.addPixmap(QtGui.QPixmap("../ico/shouce.ico"),
+                         QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.action_sysm.setIcon(icon14)
         self.action_sysm.setObjectName("action_sysm")
         self.action_zzjs = QtWidgets.QAction(MainWindow)
         icon15 = QtGui.QIcon()
-        icon15.addPixmap(QtGui.QPixmap("f:\\My_Projects\\Temperature-Uart-7.0\\src\\../ico/ak.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon15.addPixmap(QtGui.QPixmap("../ico/ak.ico"), QtGui.QIcon.Normal,
+                         QtGui.QIcon.Off)
         self.action_zzjs.setIcon(icon15)
         self.action_zzjs.setObjectName("action_zzjs")
         self.action_zlcx = QtWidgets.QAction(MainWindow)
         icon16 = QtGui.QIcon()
-        icon16.addPixmap(QtGui.QPixmap("f:\\My_Projects\\Temperature-Uart-7.0\\src\\../ico/find.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon16.addPixmap(QtGui.QPixmap("../ico/find.ico"),
+                         QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.action_zlcx.setIcon(icon16)
         font = QtGui.QFont()
         font.setFamily("微软雅黑")
@@ -1523,7 +1540,8 @@ class Ui_MainWindow(object):
         self.action_zlcx.setObjectName("action_zlcx")
         self.action_set = QtWidgets.QAction(MainWindow)
         icon17 = QtGui.QIcon()
-        icon17.addPixmap(QtGui.QPixmap("f:\\My_Projects\\Temperature-Uart-7.0\\src\\../ico/shezhi2.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon17.addPixmap(QtGui.QPixmap("../ico/shezhi2.ico"),
+                         QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.action_set.setIcon(icon17)
         font = QtGui.QFont()
         font.setFamily("微软雅黑")
@@ -1532,17 +1550,20 @@ class Ui_MainWindow(object):
         self.action_set.setObjectName("action_set")
         self.action_sx = QtWidgets.QAction(MainWindow)
         icon18 = QtGui.QIcon()
-        icon18.addPixmap(QtGui.QPixmap("f:\\My_Projects\\Temperature-Uart-7.0\\src\\../ico/shuaxin.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon18.addPixmap(QtGui.QPixmap("../ico/shuaxin.ico"),
+                         QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.action_sx.setIcon(icon18)
         self.action_sx.setObjectName("action_sx")
         self.action_alter_theme = QtWidgets.QAction(MainWindow)
         icon19 = QtGui.QIcon()
-        icon19.addPixmap(QtGui.QPixmap("f:\\My_Projects\\Temperature-Uart-7.0\\src\\../ico/moon.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon19.addPixmap(QtGui.QPixmap("../ico/moon.ico"),
+                         QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.action_alter_theme.setIcon(icon19)
         self.action_alter_theme.setObjectName("action_alter_theme")
         self.action_data = QtWidgets.QAction(MainWindow)
         icon20 = QtGui.QIcon()
-        icon20.addPixmap(QtGui.QPixmap("f:\\My_Projects\\Temperature-Uart-7.0\\src\\../ico/file.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon20.addPixmap(QtGui.QPixmap("../ico/file.ico"),
+                         QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.action_data.setIcon(icon20)
         self.action_data.setObjectName("action_data")
         self.menu.addAction(self.action_set)
@@ -1573,11 +1594,12 @@ class Ui_MainWindow(object):
         self.groupBox.setTitle(_translate("MainWindow", "串口选择"))
         self.pushButton_open.setText(_translate("MainWindow", "打开串口"))
         self.pushButton_refresh.setText(_translate("MainWindow", "刷新串口"))
-        self.rx_textBrowser.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:\'Consolas\'; font-size:14pt; font-weight:600; font-style:italic;\">\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'SimSun\'; font-size:9pt; font-weight:400; font-style:normal;\"><br /></p></body></html>"))
+        self.rx_textBrowser.setHtml(_translate("MainWindow",
+                                               "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+                                               "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+                                               "p, li { white-space: pre-wrap; }\n"
+                                               "</style></head><body style=\" font-family:\'Consolas\'; font-size:14pt; font-weight:600; font-style:italic;\">\n"
+                                               "<p style=\"-qt-paragraph-type:empty; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'SimSun\'; font-size:9pt; font-weight:400; font-style:normal;\"><br /></p></body></html>"))
         self.pushButton_send.setText(_translate("MainWindow", "发  送"))
         self.pushButton_clear_tx.setText(_translate("MainWindow", "清空发送"))
         self.pushButton_clear_rx.setText(_translate("MainWindow", "清空接收"))
